@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__container container">
+            <div class="header__top top flex">
+                <div class="burger">
+                    <span class="burger__line"></span>
+                    <span class="burger__line"></span>
+                    <span class="burger__line"></span>
+
+                </div>
+                <a href="#" class="top__logo">
+                    <img src="img/Vector.png" alt="loogo">
+                </a>
+                <form action="Post" class="top__form form">
+                    <select name="city" class="form__select form-object">
+                <option value="Ростов на дону">Растов на дону</option>
+                </select>
+                    <input type="date" class="form__input form-object">
+                    <select name="колличество жильцов" class="form__select form-object">
+                  <option value="2 гостя, 1 питомец">2 гостя, 1 питомец</option>
+                </select>
+
+                </form>
+                <div class="top__button-block button-block flex">
+                    <button class="button-block__log-in btn-reset btn btn-hover">
+                Вход
+              </button>
+                    <button class="button-block-registration btn-reset btn btn-hover">
+                    Регистрация
+                </button>
+                </div>
+
+            </div>
+            <div class="header__bottom bottom flex">
+                <form action="" class="bottom__form flex">
+                    <select name="flat-type" id="" class="bottom__select bottom-object btn-hover">
+                      <option value="Тип жилья" disabled selected>Тип жилья</option>
+                    </select>
+                    <select name="rent-type" id="" class="bottom__select bottom-object btn-hover">
+                      <option value="Тип аренды" disabled selected>Тип аренды</option>
+                    </select>
+                    <select name="price" id="" class="bottom__select bottom-object btn-hover">
+                      <option value="" disabled selected>Цена</option>
+                    </select>
+                </form>
+                <div class="bottom__button-block button-block flex">
+
+                    <button class="button-block__btn btn-object btn-hover">
+                    Бесплатная отмена
+                  </button>
+                    <button class="button-block__btn btn-object btn-hover">
+                    Мгновенное подтверждение
+                  </button>
+                    <button class="button-block__btn btn-object btn-hover">
+                    Суперхозяин
+                  </button>
+                    <button class="button-block__btn btn-object btn-hover">
+                    Горящее предложение
+                  </button>
+                </div>
+                <button class="button__filtr-btn btn-object btn-hover">
+                  Все фильтры
+                </button>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="hero container container-hero">
+            <div class="wrapper flex">
+                <div class="wrapper__left block swiper">
+                    <ul class="block__list list-reset swiper-wrapper">
+                        <li class="block__list card flex swiper-slide">
+                            <img src="./img/card-foto.jpeg" alt="" class="card__foto">
+                            <div class="card__text flex">
+                                <div class="card__box flex">
+                                    <div class="card__flat-value">
+                                        Квартира
+                                    </div>
+                                    <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.75189 13.1877L9.75231 13.1873C11.3315 11.5459 12.7445 10.3851 13.9331 9.40857C14.3756 9.04511 14.7869 8.70718 15.1641 8.37952C16.5308 7.19244 17.5 6.09636 17.5 4.43105C17.5 2.19079 15.4115 0.5 13 0.5C11.3 0.5 9.76042 1.34032 9 2.62106C8.23958 1.34032 6.70005 0.5 5 0.5C2.58851 0.5 0.5 2.19079 0.5 4.43105C0.5 6.09636 1.46916 7.19244 2.83588 8.37952C3.21312 8.70718 3.62444 9.04511 4.06686 9.40858C5.25546 10.3851 6.66846 11.5459 8.24769 13.1873L8.24811 13.1877C8.34731 13.2906 8.46674 13.369 8.59557 13.4214C8.72438 13.4738 8.8622 13.5 9 13.5C9.1378 13.5 9.27562 13.4738 9.40443 13.4214C9.53327 13.369 9.65269 13.2906 9.75189 13.1877Z" fill="#FFFBF9" fill-opacity="0.6" stroke="#37373A"/>
+</svg>
+
+                                </div>
+                                <a href="">
+                                    <h2 class="card__title">
+                                        Уютная однокомнатная квартира с видом на море
+                                    </h2>
+                                </a>
+                                <div class="card__room-descr">
+                                    <span>4 гостя</span><span>2 кровати</span><span>1 спальня</span><span>40 м2</span>
+                                </div>
+                                <div class="card__room-facilities">
+                                    <span>WI FI</span><span>Pets friendly</span><span>Бесплатная отмена</span>
+                                </div>
+                                <ul class="card__list">
+                                    <li class="card__item">
+                                        Несколько вариантов питания
+                                    </li>
+                                    <li class="card__item">
+                                        Горящее предложение
+                                    </li>
+                                    <li class="card__item">
+                                        Предоплата
+                                    </li>
+                                </ul>
+                                <div class="card__quolity flex">
+                                    <img src="./img/star.png" alt="">
+                                    <span class="numb">4.75</span>
+                                    <span class="card__review">
+                        (8 отзывов)
+                      </span>
+                                    <div class="card__price">
+                                        <b>от 4 640 ₽ /  ночь</b>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </li>
+                        <li class="block__list card flex swiper-slide">
+                            <img src="./img/card-foto.jpeg" alt="" class="card__foto">
+                            <div class="card__text flex">
+                                <div class="card__box flex">
+                                    <div class="card__flat-value">
+                                        Квартира
+                                    </div>
+                                    <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.75189 13.1877L9.75231 13.1873C11.3315 11.5459 12.7445 10.3851 13.9331 9.40857C14.3756 9.04511 14.7869 8.70718 15.1641 8.37952C16.5308 7.19244 17.5 6.09636 17.5 4.43105C17.5 2.19079 15.4115 0.5 13 0.5C11.3 0.5 9.76042 1.34032 9 2.62106C8.23958 1.34032 6.70005 0.5 5 0.5C2.58851 0.5 0.5 2.19079 0.5 4.43105C0.5 6.09636 1.46916 7.19244 2.83588 8.37952C3.21312 8.70718 3.62444 9.04511 4.06686 9.40858C5.25546 10.3851 6.66846 11.5459 8.24769 13.1873L8.24811 13.1877C8.34731 13.2906 8.46674 13.369 8.59557 13.4214C8.72438 13.4738 8.8622 13.5 9 13.5C9.1378 13.5 9.27562 13.4738 9.40443 13.4214C9.53327 13.369 9.65269 13.2906 9.75189 13.1877Z" fill="#FFFBF9" fill-opacity="0.6" stroke="#37373A"/>
+</svg>
+
+                                </div>
+                                <a href="">
+                                    <h2 class="card__title">
+                                        Уютная однокомнатная квартира с видом на море
+                                    </h2>
+                                </a>
+                                <div class="card__room-descr">
+                                    <span>4 гостя</span><span>2 кровати</span><span>1 спальня</span><span>40 м2</span>
+                                </div>
+                                <div class="card__room-facilities">
+                                    <span>WI FI</span><span>Pets friendly</span><span>Бесплатная отмена</span>
+                                </div>
+                                <ul class="card__list">
+                                    <li class="card__item">
+                                        Несколько вариантов питания
+                                    </li>
+                                    <li class="card__item">
+                                        Горящее предложение
+                                    </li>
+                                    <li class="card__item">
+                                        Предоплата
+                                    </li>
+                                </ul>
+                                <div class="card__quolity flex">
+                                    <img src="./img/star.png" alt="">
+                                    <span class="numb">4.75</span>
+                                    <span class="card__review">
+                        (8 отзывов)
+                      </span>
+                                    <div class="card__price">
+                                        <b>от 4 123 ₽ /  ночь</b>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </li>
+                        <li class="block__list card flex swiper-slide">
+                            <img src="./img/card-foto.jpeg" alt="" class="card__foto">
+                            <div class="card__text flex">
+                                <div class="card__box flex">
+                                    <div class="card__flat-value">
+                                        Квартира
+                                    </div>
+                                    <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.75189 13.1877L9.75231 13.1873C11.3315 11.5459 12.7445 10.3851 13.9331 9.40857C14.3756 9.04511 14.7869 8.70718 15.1641 8.37952C16.5308 7.19244 17.5 6.09636 17.5 4.43105C17.5 2.19079 15.4115 0.5 13 0.5C11.3 0.5 9.76042 1.34032 9 2.62106C8.23958 1.34032 6.70005 0.5 5 0.5C2.58851 0.5 0.5 2.19079 0.5 4.43105C0.5 6.09636 1.46916 7.19244 2.83588 8.37952C3.21312 8.70718 3.62444 9.04511 4.06686 9.40858C5.25546 10.3851 6.66846 11.5459 8.24769 13.1873L8.24811 13.1877C8.34731 13.2906 8.46674 13.369 8.59557 13.4214C8.72438 13.4738 8.8622 13.5 9 13.5C9.1378 13.5 9.27562 13.4738 9.40443 13.4214C9.53327 13.369 9.65269 13.2906 9.75189 13.1877Z" fill="#FFFBF9" fill-opacity="0.6" stroke="#37373A"/>
+</svg>
+
+                                </div>
+                                <a href="">
+                                    <h2 class="card__title">
+                                        Уютная однокомнатная квартира с видом на море
+                                    </h2>
+                                </a>
+                                <div class="card__room-descr">
+                                    <span>4 гостя</span><span>2 кровати</span><span>1 спальня</span><span>40 м2</span>
+                                </div>
+                                <div class="card__room-facilities">
+                                    <span>WI FI</span><span>Pets friendly</span><span>Бесплатная отмена</span>
+                                </div>
+                                <ul class="card__list">
+                                    <li class="card__item">
+                                        Несколько вариантов питания
+                                    </li>
+                                    <li class="card__item">
+                                        Горящее предложение
+                                    </li>
+                                    <li class="card__item">
+                                        Предоплата
+                                    </li>
+                                </ul>
+                                <div class="card__quolity flex">
+                                    <img src="./img/star.png" alt="">
+                                    <span class="numb">4.75</span>
+                                    <span class="card__review">
+                        (8 отзывов)
+                      </span>
+                                    <div class="card__price">
+                                        <b>от 3 200 ₽ /  ночь</b>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </li>
+                        <li class="block__list card flex swiper-slide">
+                            <img src="./img/card-foto.jpeg" alt="" class="card__foto">
+                            <div class="card__text flex">
+                                <div class="card__box flex">
+                                    <div class="card__flat-value">
+                                        Квартира
+                                    </div>
+                                    <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.75189 13.1877L9.75231 13.1873C11.3315 11.5459 12.7445 10.3851 13.9331 9.40857C14.3756 9.04511 14.7869 8.70718 15.1641 8.37952C16.5308 7.19244 17.5 6.09636 17.5 4.43105C17.5 2.19079 15.4115 0.5 13 0.5C11.3 0.5 9.76042 1.34032 9 2.62106C8.23958 1.34032 6.70005 0.5 5 0.5C2.58851 0.5 0.5 2.19079 0.5 4.43105C0.5 6.09636 1.46916 7.19244 2.83588 8.37952C3.21312 8.70718 3.62444 9.04511 4.06686 9.40858C5.25546 10.3851 6.66846 11.5459 8.24769 13.1873L8.24811 13.1877C8.34731 13.2906 8.46674 13.369 8.59557 13.4214C8.72438 13.4738 8.8622 13.5 9 13.5C9.1378 13.5 9.27562 13.4738 9.40443 13.4214C9.53327 13.369 9.65269 13.2906 9.75189 13.1877Z" fill="#FFFBF9" fill-opacity="0.6" stroke="#37373A"/>
+</svg>
+
+                                </div>
+                                <a href="">
+                                    <h2 class="card__title">
+                                        Уютная однокомнатная квартира с видом на море
+                                    </h2>
+                                </a>
+                                <div class="card__room-descr">
+                                    <span>4 гостя</span><span>2 кровати</span><span>1 спальня</span><span>40 м2</span>
+                                </div>
+                                <div class="card__room-facilities">
+                                    <span>WI FI</span><span>Pets friendly</span><span>Бесплатная отмена</span>
+                                </div>
+                                <ul class="card__list">
+                                    <li class="card__item">
+                                        Несколько вариантов питания
+                                    </li>
+                                    <li class="card__item">
+                                        Горящее предложение
+                                    </li>
+                                    <li class="card__item">
+                                        Предоплата
+                                    </li>
+                                </ul>
+                                <div class="card__quolity flex">
+                                    <img src="./img/star.png" alt="">
+                                    <span class="numb">4.75</span>
+                                    <span class="card__review">
+                        (8 отзывов)
+                      </span>
+                                    <div class="card__price">
+                                        <b>от 4 500 ₽ /  ночь</b>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </li>
+                        <li class="block__list card flex swiper-slide">
+                            <img src="./img/card-foto.jpeg" alt="" class="card__foto">
+                            <div class="card__text flex">
+                                <div class="card__box flex">
+                                    <div class="card__flat-value">
+                                        Квартира
+                                    </div>
+                                    <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.75189 13.1877L9.75231 13.1873C11.3315 11.5459 12.7445 10.3851 13.9331 9.40857C14.3756 9.04511 14.7869 8.70718 15.1641 8.37952C16.5308 7.19244 17.5 6.09636 17.5 4.43105C17.5 2.19079 15.4115 0.5 13 0.5C11.3 0.5 9.76042 1.34032 9 2.62106C8.23958 1.34032 6.70005 0.5 5 0.5C2.58851 0.5 0.5 2.19079 0.5 4.43105C0.5 6.09636 1.46916 7.19244 2.83588 8.37952C3.21312 8.70718 3.62444 9.04511 4.06686 9.40858C5.25546 10.3851 6.66846 11.5459 8.24769 13.1873L8.24811 13.1877C8.34731 13.2906 8.46674 13.369 8.59557 13.4214C8.72438 13.4738 8.8622 13.5 9 13.5C9.1378 13.5 9.27562 13.4738 9.40443 13.4214C9.53327 13.369 9.65269 13.2906 9.75189 13.1877Z" fill="#FFFBF9" fill-opacity="0.6" stroke="#37373A"/>
+</svg>
+
+                                </div>
+                                <a href="">
+                                    <h2 class="card__title">
+                                        Уютная однокомнатная квартира с видом на море
+                                    </h2>
+                                </a>
+                                <div class="card__room-descr">
+                                    <span>4 гостя</span><span>2 кровати</span><span>1 спальня</span><span>40 м2</span>
+                                </div>
+                                <div class="card__room-facilities">
+                                    <span>WI FI</span><span>Pets friendly</span><span>Бесплатная отмена</span>
+                                </div>
+                                <ul class="card__list">
+                                    <li class="card__item">
+                                        Несколько вариантов питания
+                                    </li>
+                                    <li class="card__item">
+                                        Горящее предложение
+                                    </li>
+                                    <li class="card__item">
+                                        Предоплата
+                                    </li>
+                                </ul>
+                                <div class="card__quolity flex">
+                                    <img src="./img/star.png" alt="">
+                                    <span class="numb">4.75</span>
+                                    <span class="card__review">
+                        (8 отзывов)
+                      </span>
+                                    <div class="card__price">
+                                        <b>от 4 500 ₽ /  ночь</b>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </li>
+                        <li class="block__list card flex swiper-slide">
+                            <img src="./img/card-foto.jpeg" alt="" class="card__foto">
+                            <div class="card__text flex">
+                                <div class="card__box flex">
+                                    <div class="card__flat-value">
+                                        Квартира
+                                    </div>
+                                    <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.75189 13.1877L9.75231 13.1873C11.3315 11.5459 12.7445 10.3851 13.9331 9.40857C14.3756 9.04511 14.7869 8.70718 15.1641 8.37952C16.5308 7.19244 17.5 6.09636 17.5 4.43105C17.5 2.19079 15.4115 0.5 13 0.5C11.3 0.5 9.76042 1.34032 9 2.62106C8.23958 1.34032 6.70005 0.5 5 0.5C2.58851 0.5 0.5 2.19079 0.5 4.43105C0.5 6.09636 1.46916 7.19244 2.83588 8.37952C3.21312 8.70718 3.62444 9.04511 4.06686 9.40858C5.25546 10.3851 6.66846 11.5459 8.24769 13.1873L8.24811 13.1877C8.34731 13.2906 8.46674 13.369 8.59557 13.4214C8.72438 13.4738 8.8622 13.5 9 13.5C9.1378 13.5 9.27562 13.4738 9.40443 13.4214C9.53327 13.369 9.65269 13.2906 9.75189 13.1877Z" fill="#FFFBF9" fill-opacity="0.6" stroke="#37373A"/>
+</svg>
+
+                                </div>
+                                <a href="">
+                                    <h2 class="card__title">
+                                        Уютная однокомнатная квартира с видом на море
+                                    </h2>
+                                </a>
+                                <div class="card__room-descr">
+                                    <span>4 гостя</span><span>2 кровати</span><span>1 спальня</span><span>40 м2</span>
+                                </div>
+                                <div class="card__room-facilities">
+                                    <span>WI FI</span><span>Pets friendly</span><span>Бесплатная отмена</span>
+                                </div>
+                                <ul class="card__list">
+                                    <li class="card__item">
+                                        Несколько вариантов питания
+                                    </li>
+                                    <li class="card__item">
+                                        Горящее предложение
+                                    </li>
+                                    <li class="card__item">
+                                        Предоплата
+                                    </li>
+                                </ul>
+                                <div class="card__quolity flex">
+                                    <img src="./img/star.png" alt="">
+                                    <span class="numb">4.75</span>
+                                    <span class="card__review">
+                        (8 отзывов)
+                      </span>
+                                    <div class="card__price">
+                                        <b>от 4 500 ₽ /  ночь</b>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </li>
+                        <li class="block__list card flex swiper-slide">
+                            <img src="./img/card-foto.jpeg" alt="" class="card__foto">
+                            <div class="card__text flex">
+                                <div class="card__box flex">
+                                    <div class="card__flat-value">
+                                        Квартира
+                                    </div>
+                                    <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.75189 13.1877L9.75231 13.1873C11.3315 11.5459 12.7445 10.3851 13.9331 9.40857C14.3756 9.04511 14.7869 8.70718 15.1641 8.37952C16.5308 7.19244 17.5 6.09636 17.5 4.43105C17.5 2.19079 15.4115 0.5 13 0.5C11.3 0.5 9.76042 1.34032 9 2.62106C8.23958 1.34032 6.70005 0.5 5 0.5C2.58851 0.5 0.5 2.19079 0.5 4.43105C0.5 6.09636 1.46916 7.19244 2.83588 8.37952C3.21312 8.70718 3.62444 9.04511 4.06686 9.40858C5.25546 10.3851 6.66846 11.5459 8.24769 13.1873L8.24811 13.1877C8.34731 13.2906 8.46674 13.369 8.59557 13.4214C8.72438 13.4738 8.8622 13.5 9 13.5C9.1378 13.5 9.27562 13.4738 9.40443 13.4214C9.53327 13.369 9.65269 13.2906 9.75189 13.1877Z" fill="#FFFBF9" fill-opacity="0.6" stroke="#37373A"/>
+</svg>
+
+                                </div>
+                                <a href="">
+                                    <h2 class="card__title">
+                                        Уютная однокомнатная квартира с видом на море
+                                    </h2>
+                                </a>
+                                <div class="card__room-descr">
+                                    <span>4 гостя</span><span>2 кровати</span><span>1 спальня</span><span>40 м2</span>
+                                </div>
+                                <div class="card__room-facilities">
+                                    <span>WI FI</span><span>Pets friendly</span><span>Бесплатная отмена</span>
+                                </div>
+                                <ul class="card__list">
+                                    <li class="card__item">
+                                        Несколько вариантов питания
+                                    </li>
+                                    <li class="card__item">
+                                        Горящее предложение
+                                    </li>
+                                    <li class="card__item">
+                                        Предоплата
+                                    </li>
+                                </ul>
+                                <div class="card__quolity flex">
+                                    <img src="./img/star.png" alt="">
+                                    <span class="numb">4.75</span>
+                                    <span class="card__review">
+                        (8 отзывов)
+                      </span>
+                                    <div class="card__price">
+                                        <b>от 4 500 ₽ /  ночь</b>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </li>
+                        <li class="block__list card flex swiper-slide">
+                            <img src="./img/card-foto.jpeg" alt="" class="card__foto">
+                            <div class="card__text flex">
+                                <div class="card__box flex">
+                                    <div class="card__flat-value">
+                                        Квартира
+                                    </div>
+                                    <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.75189 13.1877L9.75231 13.1873C11.3315 11.5459 12.7445 10.3851 13.9331 9.40857C14.3756 9.04511 14.7869 8.70718 15.1641 8.37952C16.5308 7.19244 17.5 6.09636 17.5 4.43105C17.5 2.19079 15.4115 0.5 13 0.5C11.3 0.5 9.76042 1.34032 9 2.62106C8.23958 1.34032 6.70005 0.5 5 0.5C2.58851 0.5 0.5 2.19079 0.5 4.43105C0.5 6.09636 1.46916 7.19244 2.83588 8.37952C3.21312 8.70718 3.62444 9.04511 4.06686 9.40858C5.25546 10.3851 6.66846 11.5459 8.24769 13.1873L8.24811 13.1877C8.34731 13.2906 8.46674 13.369 8.59557 13.4214C8.72438 13.4738 8.8622 13.5 9 13.5C9.1378 13.5 9.27562 13.4738 9.40443 13.4214C9.53327 13.369 9.65269 13.2906 9.75189 13.1877Z" fill="#FFFBF9" fill-opacity="0.6" stroke="#37373A"/>
+</svg>
+
+                                </div>
+                                <a href="">
+                                    <h2 class="card__title">
+                                        Уютная однокомнатная квартира с видом на море
+                                    </h2>
+                                </a>
+                                <div class="card__room-descr">
+                                    <span>4 гостя</span><span>2 кровати</span><span>1 спальня</span><span>40 м2</span>
+                                </div>
+                                <div class="card__room-facilities">
+                                    <span>WI FI</span><span>Pets friendly</span><span>Бесплатная отмена</span>
+                                </div>
+                                <ul class="card__list">
+                                    <li class="card__item">
+                                        Несколько вариантов питания
+                                    </li>
+                                    <li class="card__item">
+                                        Горящее предложение
+                                    </li>
+                                    <li class="card__item">
+                                        Предоплата
+                                    </li>
+                                </ul>
+                                <div class="card__quolity flex">
+                                    <img src="./img/star.png" alt="">
+                                    <span class="numb">4.75</span>
+                                    <span class="card__review">
+                        (8 отзывов)
+                      </span>
+                                    <div class="card__price">
+                                        <b>от 4 500 ₽ /  ночь</b>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </li>
+                        <li class="block__list card flex swiper-slide">
+                            <img src="./img/card-foto.jpeg" alt="" class="card__foto">
+                            <div class="card__text flex">
+                                <div class="card__box flex">
+                                    <div class="card__flat-value">
+                                        Квартира
+                                    </div>
+                                    <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.75189 13.1877L9.75231 13.1873C11.3315 11.5459 12.7445 10.3851 13.9331 9.40857C14.3756 9.04511 14.7869 8.70718 15.1641 8.37952C16.5308 7.19244 17.5 6.09636 17.5 4.43105C17.5 2.19079 15.4115 0.5 13 0.5C11.3 0.5 9.76042 1.34032 9 2.62106C8.23958 1.34032 6.70005 0.5 5 0.5C2.58851 0.5 0.5 2.19079 0.5 4.43105C0.5 6.09636 1.46916 7.19244 2.83588 8.37952C3.21312 8.70718 3.62444 9.04511 4.06686 9.40858C5.25546 10.3851 6.66846 11.5459 8.24769 13.1873L8.24811 13.1877C8.34731 13.2906 8.46674 13.369 8.59557 13.4214C8.72438 13.4738 8.8622 13.5 9 13.5C9.1378 13.5 9.27562 13.4738 9.40443 13.4214C9.53327 13.369 9.65269 13.2906 9.75189 13.1877Z" fill="#FFFBF9" fill-opacity="0.6" stroke="#37373A"/>
+</svg>
+
+                                </div>
+                                <a href="">
+                                    <h2 class="card__title">
+                                        Уютная однокомнатная квартира с видом на море
+                                    </h2>
+                                </a>
+                                <div class="card__room-descr">
+                                    <span>4 гостя</span><span>2 кровати</span><span>1 спальня</span><span>40 м2</span>
+                                </div>
+                                <div class="card__room-facilities">
+                                    <span>WI FI</span><span>Pets friendly</span><span>Бесплатная отмена</span>
+                                </div>
+                                <ul class="card__list">
+                                    <li class="card__item">
+                                        Несколько вариантов питания
+                                    </li>
+                                    <li class="card__item">
+                                        Горящее предложение
+                                    </li>
+                                    <li class="card__item">
+                                        Предоплата
+                                    </li>
+                                </ul>
+                                <div class="card__quolity flex">
+                                    <img src="./img/star.png" alt="">
+                                    <span class="numb">4.75</span>
+                                    <span class="card__review">
+                        (8 отзывов)
+                      </span>
+                                    <div class="card__price">
+                                        <b>от 4 500 ₽ /  ночь</b>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </li>
+                        <li class="block__list card flex swiper-slide">
+                            <img src="./img/card-foto.jpeg" alt="" class="card__foto">
+                            <div class="card__text flex">
+                                <div class="card__box flex">
+                                    <div class="card__flat-value">
+                                        Квартира
+                                    </div>
+                                    <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.75189 13.1877L9.75231 13.1873C11.3315 11.5459 12.7445 10.3851 13.9331 9.40857C14.3756 9.04511 14.7869 8.70718 15.1641 8.37952C16.5308 7.19244 17.5 6.09636 17.5 4.43105C17.5 2.19079 15.4115 0.5 13 0.5C11.3 0.5 9.76042 1.34032 9 2.62106C8.23958 1.34032 6.70005 0.5 5 0.5C2.58851 0.5 0.5 2.19079 0.5 4.43105C0.5 6.09636 1.46916 7.19244 2.83588 8.37952C3.21312 8.70718 3.62444 9.04511 4.06686 9.40858C5.25546 10.3851 6.66846 11.5459 8.24769 13.1873L8.24811 13.1877C8.34731 13.2906 8.46674 13.369 8.59557 13.4214C8.72438 13.4738 8.8622 13.5 9 13.5C9.1378 13.5 9.27562 13.4738 9.40443 13.4214C9.53327 13.369 9.65269 13.2906 9.75189 13.1877Z" fill="#FFFBF9" fill-opacity="0.6" stroke="#37373A"/>
+</svg>
+
+                                </div>
+                                <a href="">
+                                    <h2 class="card__title">
+                                        Уютная однокомнатная квартира с видом на море
+                                    </h2>
+                                </a>
+                                <div class="card__room-descr">
+                                    <span>4 гостя</span><span>2 кровати</span><span>1 спальня</span><span>40 м2</span>
+                                </div>
+                                <div class="card__room-facilities">
+                                    <span>WI FI</span><span>Pets friendly</span><span>Бесплатная отмена</span>
+                                </div>
+                                <ul class="card__list">
+                                    <li class="card__item">
+                                        Несколько вариантов питания
+                                    </li>
+                                    <li class="card__item">
+                                        Горящее предложение
+                                    </li>
+                                    <li class="card__item">
+                                        Предоплата
+                                    </li>
+                                </ul>
+                                <div class="card__quolity flex">
+                                    <img src="./img/star.png" alt="">
+                                    <span class="numb">4.75</span>
+                                    <span class="card__review">
+                        (8 отзывов)
+                      </span>
+                                    <div class="card__price">
+                                        <b>от 4 500 ₽ /  ночь</b>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </li>
+                        <li class="block__list card flex swiper-slide">
+                            <img src="./img/card-foto.jpeg" alt="" class="card__foto">
+                            <div class="card__text flex">
+                                <div class="card__box flex">
+                                    <div class="card__flat-value">
+                                        Квартира
+                                    </div>
+                                    <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.75189 13.1877L9.75231 13.1873C11.3315 11.5459 12.7445 10.3851 13.9331 9.40857C14.3756 9.04511 14.7869 8.70718 15.1641 8.37952C16.5308 7.19244 17.5 6.09636 17.5 4.43105C17.5 2.19079 15.4115 0.5 13 0.5C11.3 0.5 9.76042 1.34032 9 2.62106C8.23958 1.34032 6.70005 0.5 5 0.5C2.58851 0.5 0.5 2.19079 0.5 4.43105C0.5 6.09636 1.46916 7.19244 2.83588 8.37952C3.21312 8.70718 3.62444 9.04511 4.06686 9.40858C5.25546 10.3851 6.66846 11.5459 8.24769 13.1873L8.24811 13.1877C8.34731 13.2906 8.46674 13.369 8.59557 13.4214C8.72438 13.4738 8.8622 13.5 9 13.5C9.1378 13.5 9.27562 13.4738 9.40443 13.4214C9.53327 13.369 9.65269 13.2906 9.75189 13.1877Z" fill="#FFFBF9" fill-opacity="0.6" stroke="#37373A"/>
+</svg>
+
+                                </div>
+                                <a href="">
+                                    <h2 class="card__title">
+                                        Уютная однокомнатная квартира с видом на море
+                                    </h2>
+                                </a>
+                                <div class="card__room-descr">
+                                    <span>4 гостя</span><span>2 кровати</span><span>1 спальня</span><span>40 м2</span>
+                                </div>
+                                <div class="card__room-facilities">
+                                    <span>WI FI</span><span>Pets friendly</span><span>Бесплатная отмена</span>
+                                </div>
+                                <ul class="card__list">
+                                    <li class="card__item">
+                                        Несколько вариантов питания
+                                    </li>
+                                    <li class="card__item">
+                                        Горящее предложение
+                                    </li>
+                                    <li class="card__item">
+                                        Предоплата
+                                    </li>
+                                </ul>
+                                <div class="card__quolity flex">
+                                    <img src="./img/star.png" alt="">
+                                    <span class="numb">4.75</span>
+                                    <span class="card__review">
+                        (8 отзывов)
+                      </span>
+                                    <div class="card__price">
+                                        <b>от 4 500 ₽ /  ночь</b>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </li>
+                        <li class="block__list card flex swiper-slide">
+                            <img src="./img/card-foto.jpeg" alt="" class="card__foto">
+                            <div class="card__text flex">
+                                <div class="card__box flex">
+                                    <div class="card__flat-value">
+                                        Квартира
+                                    </div>
+                                    <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.75189 13.1877L9.75231 13.1873C11.3315 11.5459 12.7445 10.3851 13.9331 9.40857C14.3756 9.04511 14.7869 8.70718 15.1641 8.37952C16.5308 7.19244 17.5 6.09636 17.5 4.43105C17.5 2.19079 15.4115 0.5 13 0.5C11.3 0.5 9.76042 1.34032 9 2.62106C8.23958 1.34032 6.70005 0.5 5 0.5C2.58851 0.5 0.5 2.19079 0.5 4.43105C0.5 6.09636 1.46916 7.19244 2.83588 8.37952C3.21312 8.70718 3.62444 9.04511 4.06686 9.40858C5.25546 10.3851 6.66846 11.5459 8.24769 13.1873L8.24811 13.1877C8.34731 13.2906 8.46674 13.369 8.59557 13.4214C8.72438 13.4738 8.8622 13.5 9 13.5C9.1378 13.5 9.27562 13.4738 9.40443 13.4214C9.53327 13.369 9.65269 13.2906 9.75189 13.1877Z" fill="#FFFBF9" fill-opacity="0.6" stroke="#37373A"/>
+</svg>
+
+                                </div>
+                                <a href="">
+                                    <h2 class="card__title">
+                                        Уютная однокомнатная квартира с видом на море
+                                    </h2>
+                                </a>
+                                <div class="card__room-descr">
+                                    <span>4 гостя</span><span>2 кровати</span><span>1 спальня</span><span>40 м2</span>
+                                </div>
+                                <div class="card__room-facilities">
+                                    <span>WI FI</span><span>Pets friendly</span><span>Бесплатная отмена</span>
+                                </div>
+                                <ul class="card__list">
+                                    <li class="card__item">
+                                        Несколько вариантов питания
+                                    </li>
+                                    <li class="card__item">
+                                        Горящее предложение
+                                    </li>
+                                    <li class="card__item">
+                                        Предоплата
+                                    </li>
+                                </ul>
+                                <div class="card__quolity flex">
+                                    <img src="./img/star.png" alt="">
+                                    <span class="numb">4.75</span>
+                                    <span class="card__review">
+                        (8 отзывов)
+                      </span>
+                                    <div class="card__price">
+                                        <b>от 4 500 ₽ /  ночь</b>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </li>
+                    </ul>
+                    <div class="swiper-pagination"></div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
+                    <!-- If we need scrollbar -->
+                    <div class="swiper-scrollbar"></div>
+                </div>
+                <div class="wrapper__right block">
+                    <img src="./img/map-sochi .jpeg" alt="">
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__container container">
+            <div class="footer__wrapper wrapper flex">
+                <div class="wrapper__top nav">
+                    <ul class="nav__list list-reset flex">
+                        <li class="nav__item">
+                            О проекте
+                        </li>
+                        <li class="nav__item">
+                            Руководство
+                        </li>
+                        <li class="nav__item">
+                            Правила
+                        </li>
+                        <li class="nav__item">
+                            Помощь
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="wrapper__bottom social flex">
+                    <ul class="social__list list-reset flex">
+                        <li class="social__item">
+                            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="0.5" width="24" height="24" rx="12" fill="#5F5F61"/>
+                            <path d="M13.4941 12.2189H15.7275L16.0781 9.93638H13.4937V8.68885C13.4937 7.74064 13.8016 6.89982 14.6832 6.89982H16.0999V4.90789C15.851 4.87408 15.3246 4.80005 14.3299 4.80005C12.2528 4.80005 11.0351 5.90363 11.0351 8.41787V9.93638H8.8999V12.2189H11.0351V18.4927C11.458 18.5566 11.8863 18.6 12.3259 18.6C12.7234 18.6 13.1113 18.5635 13.4941 18.5114V12.2189Z" fill="#FFFBF9"/>
+                            </svg>
+
+                        </li>
+                        <li class="social__item">
+                            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="0.5" width="24" height="24" rx="12" fill="#5F5F61"/>
+                            <path d="M18.8601 8.94005C18.4401 9.12005 17.9601 9.24005 17.4801 9.30005C17.9601 9.00005 18.3801 8.52005 18.5601 7.98005C18.0801 8.28005 17.6001 8.46005 17.0001 8.58005C16.5801 8.10005 15.9201 7.80005 15.2601 7.80005C13.9401 7.80005 12.8601 8.88005 12.8601 10.2C12.8601 10.38 12.8601 10.56 12.9201 10.74C10.9401 10.62 9.14009 9.66005 7.94009 8.22005C7.76009 8.58005 7.64009 9.00005 7.64009 9.42005C7.64009 10.26 8.0601 10.98 8.7201 11.4C8.3001 11.4 7.94009 11.28 7.64009 11.1C7.64009 12.24 8.48009 13.26 9.56009 13.44C9.38009 13.5 9.1401 13.5 8.9001 13.5C8.7201 13.5 8.6001 13.5 8.4201 13.44C8.7201 14.4 9.6201 15.12 10.7001 15.12C9.8601 15.78 8.8401 16.14 7.7001 16.14C7.5201 16.14 7.3401 16.1401 7.1001 16.0801C8.1801 16.7401 9.4401 17.1601 10.8201 17.1601C15.2601 17.1601 17.6601 13.5 17.6601 10.32V10.02C18.1401 9.84005 18.5601 9.42005 18.8601 8.94005Z" fill="#FFFBF9"/>
+                            </svg>
+
+                        </li>
+                        <li class="social__item">
+                            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="0.5" width="24" height="24" rx="12" fill="#5F5F61"/>
+                            <path d="M17.2999 7.56129L15.4966 16.9753C15.4966 16.9753 15.2443 17.628 14.5512 17.315L10.3906 14.0115L10.3714 14.0018C10.9334 13.4792 15.2913 9.42155 15.4818 9.23762C15.7767 8.95277 15.5936 8.78319 15.2513 8.99837L8.81398 13.2317L6.33049 12.3664C6.33049 12.3664 5.93966 12.2224 5.90206 11.9094C5.86396 11.5959 6.34335 11.4263 6.34335 11.4263L16.4678 7.31332C16.4678 7.31332 17.2999 6.93471 17.2999 7.56129Z" fill="#FFFBF9"/>
+                            </svg>
+
+                        </li>
+                    </ul>
+                    <div class="bottom__span">
+                        2022 © ООО “Понаехали”
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="index.js"></script>
+
+</body>
+
+</html>
